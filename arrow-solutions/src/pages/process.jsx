@@ -2,8 +2,9 @@ import Footer from "../components/Footer"
 import ServiceCard  from "../components/ServiceCard"
 import Impact from "../components/Impact"
 import Why from "../components/Why"
+import ProcessComponent from "../components/Process"
 
-export default function Services() {
+export default function ProcessPage() {
   return (
     <div>
       <div className="p-0 m-0">
@@ -11,7 +12,7 @@ export default function Services() {
         
         </h1>
       </div>
-      <Why />
+        <ProcessComponent />
       
 
       

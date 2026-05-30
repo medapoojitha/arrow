@@ -1,19 +1,32 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import logo from "./assets/logo.png";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Impact from "./pages/Impact";
+import ProcessPage from "./pages/process";
+import Partners from "./pages/partners";
+import OurWork from "./pages/ourwork";
 
-import Home from "./pages/Home"
-import About from "./pages/About"
-import Services from "./pages/Services"
-import Contact from "./pages/Contact"
-
-export default function App() {
+function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/About' element={<About />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/impact" element={<Impact />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/process" element={<ProcessPage />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/ourwork" element={<OurWork />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
-  )
+    </Router>
+  );
 }
+
+export default App;

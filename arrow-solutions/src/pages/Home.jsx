@@ -1,41 +1,35 @@
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ServiceCard from "../components/ServiceCard";
+import Why from "../components/Why";
+import Cta from "../components/Cta";
+import Impact from "../components/Impact";
+import AboutSection from "../components/AboutSection";
+import Choose from "../components/Choose";
+import Process from "../components/Process";
+import Footer from "../components/Footerr";
+import Partners from "../components/Partners";
+import Collaborations from "../components/Collaborations";
+
+
+
 
 function Home() {
   return (
     <div>
-      <Navbar />
-
       <Hero />
+      <Why />
+      <ServiceCard />
+      <Cta />
+      <Impact />
+      <AboutSection />
+      <Choose />
+      <Process />
+      
+      <Partners />
+      <Collaborations />
+      <Footer />
 
-      {/* Services Section */}
-      <div className="bg-gray-100 py-20 px-6">
-        <h1 className="text-4xl font-bold text-center mb-12">
-          Our Services
-        </h1>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          
-          <ServiceCard
-            icon="💻"
-            title="Web Development"
-            description="We build responsive and modern websites for businesses."
-          />
-
-          <ServiceCard
-            icon="🎨"
-            title="UI/UX Design"
-            description="Creative and user-friendly designs for better experience."
-          />
-
-          <ServiceCard
-            icon="📱"
-            title="App Development"
-            description="Mobile applications with high performance and scalability."
-          />
-        </div>
-      </div>
     </div>
   );
 }
